@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>Hello, index.html here!</p>
+    <p>{{some_text}}</p>
+    <p>Current year: {{current_year}}</p>
+<br>
+<p>CITIES:</p>
+    {% for city in cities %}
+        <p>{{city}}</p>
+    {% endfor %}
+<br>
+<p>COUNTRIES:</p>
+    {% for country in countries %}
+        <p>{{country}}</p>
+    {% endfor %}
+
+{% endblock content %}
